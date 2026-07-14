@@ -1,0 +1,13 @@
+.tetrimino {
+	display: grid;
+	grid-row: auto;
+	grid-column: auto;
+}
+
+.tetriminoRow {
+}
+
+.mino {
+	user-select: none;
+	-webkit-user-drag: none;
+}

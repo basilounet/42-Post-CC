@@ -1,0 +1,180 @@
+.tetrisWindowBkg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #9860ec;
+    width: 80vw;
+    height: 90vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 0 0 #000000, 0 0 10px #000000, 20px 20px 10px #000
+}
+
+.backButton {
+    position: inherit;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10%;
+    width: 35%;
+    height: 100%;
+    background-color: #511695;
+    border-radius: 100px;
+    cursor: pointer;
+    text-shadow: #1a1a1a 1px 1px 1px;
+    text-align: center;
+    font-family: 'play_pretend', 'Arial', sans-serif;
+    font-size: 2vmin;
+    user-select: none;
+}
+
+.playerText {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(231, 170, 44);
+    margin-left: 10%;
+    margin-top: -10%;
+    font-size: 2.5vmin;
+    user-select: none;
+}
+
+.playButton {
+    position: inherit;
+    align-items: flex-start;
+    justify-content: left;
+    width: 70%;
+    height: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: #511695;
+    border-radius: 100px;
+    cursor: pointer;
+    text-shadow: #1a1a1a 1px 1px 1px;
+    text-align: left;
+    font-family: 'play_pretend', 'Arial', sans-serif;
+    font-size: 2vmin;
+    user-select: none;
+}
+
+.copyCodeBox {
+    position: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    background-color: #e7aa2c;
+    text-shadow: #1a1a1a 1px 1px 1px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 100px;
+    white-space: normal;
+    font-size: 1.5vmin;
+    word-wrap: break-word;
+    user-select: none; /* Standard syntax */
+}
+
+.participantsText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: rgb(231, 170, 44);
+    margin-left: 4%;
+    margin-top: 1%;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    font-size: 2vmin;
+}
+
+.settingsTitle {
+    display: flex;
+    margin-top: 0.75%;
+    margin-bottom: .2%;
+    width: 100%;
+    height: 33%;
+    align-items: center;
+    justify-content: center;
+    color: rgb(231, 170, 44);
+    font-size: 2vmin;
+    user-select: none;
+}
+
+.roomSettingsForm {
+    height: 50%;
+    width: 90%;
+    /*margin-left: 5%;*/
+    /*margin-right: 5%;*/
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 5%;
+    user-select: none;
+}
+
+
+.settingBox {
+    display: grid;
+    flex: 1 1 0;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-evenly;
+    justify-items: center;
+    background-color: #511695;
+    border-radius: 20px;
+    padding: 2vh;
+    box-shadow: 0 0 0 #000000, 0 0 10px #000000, 20px 20px 10px #000;
+    font-size: 1.8vmin;
+}
+.labelSettings {
+    justify-self: left;
+    text-wrap: pretty;
+    /*white-space: nowrap;*/
+    color: rgb(231, 170, 44);
+    font-size: 1.6vmin;
+}
+
+.inputSettingsCheckbox {
+    justify-self: right;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.inputSettingsSelect {
+    justify-self: right;
+    box-sizing: border-box;
+    text-align: center;
+    text-wrap: ;
+    min-width: 100%;
+    cursor: pointer;
+}
+
+.inputSettingsNumber {
+    justify-self: right;
+    min-width:  100%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.inputSettings {
+    justify-self: right;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.boardContainer {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

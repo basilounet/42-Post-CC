@@ -1,0 +1,52 @@
+{
+  "devDependencies": {
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.13.13",
+    "concurrently": "^9.1.2"
+  },
+  "name": "ft_transcendence",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "PRINT_LOGS=false mocha ; PRINT_LOGS=true",
+    "testcov": "PRINT_LOGS=false nyc mocha ; PRINT_LOGS=true",
+    "start": "PRINT_LOGS=false node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xeotham/ft_transcendence.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xeotham/ft_transcendence/issues"
+  },
+  "homepage": "https://github.com/Xeotham/ft_transcendence#readme",
+  "type": "commonjs",
+  "dependencies": {
+    "@fastify/cors": "^11.0.0",
+    "@fastify/formbody": "^8.0.2",
+    "avvio": "^9.1.0",
+    "chai": "^5.2.0",
+    "commonjs": "^0.0.1",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "fastify-multipart": "^5.4.0",
+    "glob": "^11.0.1",
+    "minimatch": "^10.0.1",
+    "mocha": "^11.7.2",
+    "node": "^22.17.0",
+    "node-fetch": "^2.7.0",
+    "nodejs": "^0.0.0",
+    "nyc": "^17.1.0",
+    "path": "^0.12.7",
+    "seedrandom": "^3.0.5",
+    "sinon": "^21.0.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "description": ""
+}

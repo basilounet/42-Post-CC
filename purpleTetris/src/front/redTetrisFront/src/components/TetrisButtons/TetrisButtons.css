@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'hun_din_1451';
+	src: url('../../assets/fonts/hun_din_1451/HunDIN1451.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'product_design_2';
+	src: url('../../assets/fonts/product_design_2/ProductDesign.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'play_pretend';
+	src: url('../../assets/fonts/play_pretend/Play Pretend.otf') format('truetype');
+}
+
+.tetris-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1%;
+	margin: 1%;
+	background-color: #654caf;
+	border-radius: 25px;
+	cursor: pointer;
+	width: 80%;
+	height: 100%;
+	max-width: 1000px;
+	text-shadow: #1a1a1a 1px 1px 1px;
+	font-size: 4vmin;
+	font-family: 'play_pretend', 'Arial', sans-serif;
+	user-select: none;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.tetris-button:hover {
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease-in-out, width 0.3s ease-in-out;
+	box-shadow: 3px 3px 0 #000000, 3px -3px 10px #000000, -3px 3px 10px #000;
+	width: 95%;
+	background-color: #7762b0;
+	border-radius: 250px;
+}

@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'modern-tetris';
+	src: url('../../assets/fonts/modern-tetris/modern-tetris.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'hun_din_1451';
+	src: url('../../assets/fonts/hun_din_1451/HunDIN1451.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: 'gameplay';
+	src: url('../../assets/fonts/gameplay/Gameplay.ttf') format('truetype');
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000;
+	font-family: 'gameplay', 'Arial', sans-serif;
+	font-size: 8vmin;
+	color: #5d19c3;
+	user-select: none;
+}
+
+.menu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 2vmin;
+	width: 50%;
+	height: 40%;
+}

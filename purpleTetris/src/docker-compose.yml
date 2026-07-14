@@ -1,0 +1,39 @@
+services:
+  back:
+    build:
+      context: back
+    container_name: back
+    ports:
+      - "3000:3000"
+    env_file: ".env"
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:3000/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    networks:
+      transcendence:
+    restart: always
+    init: true
+  front:
+    build:
+      context: front
+      args:
+        - VITE_API_ADDRESS=${VITE_API_ADDRESS}
+        - VITE_FRONT_PORT=${VITE_FRONT_PORT}
+    container_name: front
+    ports:
+      - "5000:5000"
+    env_file: ".env"
+    depends_on:
+      back:
+          condition: service_healthy
+    networks:
+      transcendence:
+    restart: always
+    init: true
+
+networks:
+  transcendence:
+    driver: bridge

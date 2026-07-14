@@ -1,0 +1,12 @@
+*.idea
+src/.venv
+*.nfs*
+*.env
+fastify-blog/
+*node_modules/
+#*.js
+!src/front/redTetrisFront/vite.config.js
+.data/back/*
+.data/front/*
+*.nyc_output
+.idea

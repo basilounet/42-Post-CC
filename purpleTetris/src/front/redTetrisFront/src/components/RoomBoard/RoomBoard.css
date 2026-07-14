@@ -1,0 +1,299 @@
+/* Board Related (Matrix, Hold, Bags) Styles */
+
+.hideShow {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	width: 9%;
+	height: 9%;
+	background: #7125df;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 10;
+	font-size: 1.5vmin;
+	user-select: none;
+	transition: 0.5s;
+}
+
+.hideShow:hover {
+	background: #4411a3;
+	width: 11%;
+	height: 11%;
+	top: 4%;
+	right: 4%;
+	box-shadow: 2px 2px 0 #000000, 2px -2px 10px #000000, -2px 2px 10px #000;
+	border-radius: 10px;
+	font-size: 1.75vmin;
+	transition: 0.5s;
+}
+
+.roomBoard {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.userBoard {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 0 30px;
+}
+
+.boardHold {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	margin-bottom: 500px;
+}
+
+.boardMatrix {
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.boardBag {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20px;
+	margin-bottom: 250px;
+}
+
+.opponentBoard {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.opponentContainer {
+	justify-content: center;
+	align-items: center;
+}
+
+/* Styles for the stats display of the end screen */
+
+.statsDisplay {
+	padding: 30px 100px 175px 100px;
+	position: absolute;
+	width: 60vw;
+	height: 95vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	align-items: center;
+	display: flex;
+	background-color: rgba(54, 40, 92, 0.9);
+}
+
+.endTitle {
+	display: inline-block;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.score {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;
+}
+
+/* Styles for the info table */
+
+.infoTable {
+	display: grid;
+	grid-template-columns: auto auto; /* Two columns: one for title, one for value */
+	gap: 10px; /* Space between rows and columns */
+	align-items: center; /* Align items vertically */
+}
+
+.infoTitle {
+	font-weight: bold;
+	text-align: left; /* Align text to the right for titles */
+	margin-right: 70px; /* Space between title and value */
+}
+
+.infoValue {
+	font-weight: normal;
+	text-align: left; /* Align text to the left for values */
+}
+
+.infoSpacing {
+	margin-bottom: 10px; /* Space between rows */
+	width: 100%;
+}
+
+
+/* Styles for the clears table */
+
+.clearsTable {
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	gap: 10px; /* Space between rows and columns */
+	align-items: center; /* Align items vertically */
+}
+
+.clearsInfoTitle {
+	font-weight: bold;
+	text-align: center; /* Align text to the right for titles */
+	margin-right: 70px; /* Space between title and value */
+	background-color: #4411a3;
+	padding: 2px 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clearsInfoKey {
+	background-color: #4411a3;
+	padding: 5px 5px;
+	font-weight: bold;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clearsInfoValue {
+	background-color: #7125df;
+	width: 100%;
+	height: 100%;
+	font-weight: normal;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clearsInfoValue:hover {
+	background-color: #4411a3;
+	box-shadow: 2px 2px 0 #000000, 2px -2px 10px #000000, -2px 2px 10px #000;
+}
+
+.clearsInfoValueEmpty {
+	background-color: #250070;
+	width: 100%;
+	height: 100%;
+	font-weight: normal;
+	text-align: center; /* Align text to the left for values */
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clearsInfoValueEmpty:hover {
+	/*background-color: #4411a3;*/
+	box-shadow: 2px 2px 0 #000000, 2px -2px 10px #000000, -2px 2px 10px #000;
+}
+
+/* Styles for current score */
+
+.scoreDisplay {
+	position: absolute;
+	bottom: 20%;
+	left: 75%;
+}
+
+.scoreDisplayTitle {
+	justify-content: left;
+	align-items: center;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	margin-right: 20px;
+}
+
+.scoreDisplayValue {
+	justify-self: left;
+}
+
+.gameStats {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 15%;
+	left: 0;
+	transform: translateX(-50%); /* Adjust for the width of the stats */
+	width: 300px;
+	border-radius: 5px;
+	/*background-color: #4411a3;*/
+	grid-template-columns: repeat(2, auto);
+	color: white;
+	font-size: 20px;
+	text-align: right;
+}
+
+.gameStatsKey {
+	display: flex;
+	justify-content: right;
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.gameStatsValue {
+	display: flex;
+	margin-bottom: 15px;
+	justify-content: right;
+	padding: 5px 5px;
+	width: 100%;
+}
+
+
+/* Back Home button */
+
+.backHomeButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #654caf;
+	margin-top: 20px;
+	color: white;
+	border: none;
+	width: 90%;
+	margin-left: 5%;
+	height: 80px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 30px;
+	position: relative;
+	transition: 0.25s;
+}
+
+.backHomeButton:hover {
+	box-shadow: 2px 2px 0 #000000, 2px -2px 10px #000000, -2px 2px 10px #000;
+	width: 100%;
+	margin-left: 0;
+	border-radius: 40px;
+	background-color: #7762b0;
+	transition: 0.25s;
+}

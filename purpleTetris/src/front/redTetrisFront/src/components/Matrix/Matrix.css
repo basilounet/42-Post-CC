@@ -1,0 +1,45 @@
+.matrixGrid {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	background-color: black;
+}
+
+.colContainer {
+	display: flex;
+	flex-direction: column;
+	top: 50%;
+	left: 50%;
+}
+.rowContainer {
+	display: flex;
+	flex-direction: row;
+	top: 50%;
+	left: 50%;
+}
+
+.mino {
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+.usernameContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background-color: #9a1515;
+	border: 2px solid white;
+	margin-top: 10px;
+}
+
+.username {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	width: 100%;
+	height: 50px;
+}

@@ -1,0 +1,173 @@
+.title {
+	width: 20vw;
+	height: 10vh;
+	font-size: 6vmin;
+	margin-top: 3vh;
+	margin-bottom: 1vh;
+	text-wrap: nowrap;
+	user-select: none;
+}
+
+.buttonsDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 25vw;
+	height: 7vh;
+	flex-flow: column;
+	gap: 5%;
+}
+
+.nextPrevButtons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 2%;
+	width: 100%;
+	height: 100%;
+	font-size: 2vmin;
+	gap: 5%;
+}
+
+.button {
+	display:  flex;
+	background-color: #654caf;
+	color: white;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.5vmin;
+	border-radius: 5px;
+	cursor: pointer;
+	user-select: none;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.button:hover {
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease-in-out, width 0.3s ease-in-out;
+	border-radius: 8px;
+	background-color: #7a5bcf;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.roomList {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1em;
+	/*gap: 10%;*/
+	margin-top: 10%;
+	margin-bottom: 10%;
+	align-items: center;
+	justify-items: center;
+	font-size: 1.4vmin;
+}
+
+.room {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: #654caf;
+	width: 100%;
+	height: 3vh;
+	padding: 1vh;
+	user-select: none;
+	clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, width 0.3s ease-in-out;
+}
+
+.room:hover {
+	background-color: #7a5bcf;
+	cursor: pointer;
+	width: 110%;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, width 0.3s ease-in-out;
+}
+
+.createRoomButton {
+	width: 20vw;
+	height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #654caf;
+	color: white;
+	font-size: 2vmin;
+	border-radius: 5px;
+	clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+	user-select: none;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, width 0.3s ease-in-out;
+}
+
+.createRoomButton:hover {
+	background-color: #7a5bcf;
+	cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 110%;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, width 0.3s ease-in-out;
+}
+
+.findRooms {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.createRoom {
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	background-color: rgba(32, 10, 94, 0.8);
+	width: 60vw;
+	height: 60vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	backdrop-filter: blur(2px);
+	border-radius: 50px;
+	box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	font-size: 2vmin;
+}
+
+.createRoomForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height: 100%;
+	margin-top: 15vh;
+	margin-bottom: 5vh;
+}
+
+.createRoomInput {
+	width: 25%;
+	height: 50%;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	padding: 8px;
+	font-size: 2vmin;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.submitButton {
+	width: 40%;
+	height: 20%;
+	align-content: center;
+	justify-content: center;
+	font-size: 1.5vmin;
+	margin-left: 0;
+}

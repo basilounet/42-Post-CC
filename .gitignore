@@ -1,0 +1,12 @@
+*obj/
+*.o
+*.a
+*.out
+*.swp
+*.vscode/
+*test/
+*.idea
+
+*build.timestamp
+out
+diff.txt
